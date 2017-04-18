@@ -1,1 +1,40 @@
-{     "devDependencies": {         "random-key": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-random-key",     "homepage": "https://github.com/npmtest/node-npmtest-random-key",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-random-key.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### test coverage for  [random-key (v0.3.2)](https://github.com/yanxi-com/nodejs-random-key)  [![npm package](https://img.shields.io/npm/v/npmtest-random-key.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-random-key) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-random-key.svg)](https://travis-ci.org/npmtest/node-npmtest-random-key)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "random-key": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-random-key",
+    "keywords": [
+        "coverage",
+        "test",
+        "random-key"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_random_key.js",
+    "name": "npmtest-random-key",
+    "nameAlias": "npmtest_random_key",
+    "nameOriginal": "npmtest-random-key",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-random-key.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
