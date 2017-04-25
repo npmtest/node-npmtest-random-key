@@ -1,6 +1,6 @@
 # npmtest-random-key
 
-#### test coverage for  [random-key (v0.3.2)](https://github.com/yanxi-com/nodejs-random-key)  [![npm package](https://img.shields.io/npm/v/npmtest-random-key.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-random-key) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-random-key.svg)](https://travis-ci.org/npmtest/node-npmtest-random-key)
+#### basic test coverage for  [random-key (v0.3.2)](https://github.com/yanxi-com/nodejs-random-key)  [![npm package](https://img.shields.io/npm/v/npmtest-random-key.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-random-key) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-random-key.svg)](https://travis-ci.org/npmtest/node-npmtest-random-key)
 
 #### Generating random strings (cryptographically strong) for NodeJS
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-random-key/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-random-key/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-random-key/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-random-key/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-random-key/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-random-key/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-random-key/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-random-key/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-random-key/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-random-key/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-random-key/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-random-key/build/coverage.html/index.html)
 
@@ -72,7 +72,8 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "version": "0.3.2"
+    "version": "0.3.2",
+    "bin": {}
 }
 ```
 
